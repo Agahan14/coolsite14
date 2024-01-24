@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contacts</title>
-</head>
-<body>
-<ul>
-{% for i in menu %}
-    <li><a href="{% url i.url %}">{{ i.name }}</a></li>
-{% endfor %}
-    <hr>
-</ul>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+<h1>Contacts</h1>
+{% endblock content %}
